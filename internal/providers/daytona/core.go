@@ -31,6 +31,7 @@ type LeaseView = core.LeaseView
 type StatusRequest = core.StatusRequest
 type StatusView = core.StatusView
 type StopRequest = core.StopRequest
+type CopyRequest = core.CopyRequest
 type Server = core.Server
 type Repo = core.Repo
 type LeaseTarget = core.LeaseTarget

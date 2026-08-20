@@ -49,6 +49,10 @@ Go-owned tar+gzip archive stream over SSH instead; it never invokes the rejected
 rsync client, scp, or another copy command. Delegated providers with neither
 transport fail clearly.
 
+Daytona uses its native file API for sandbox-to-host downloads, so this path
+does not need local or remote rsync. It downloads one file at a time. Daytona
+uploads and `-L` are not supported by `crabbox cp`.
+
 The resolved SSH user, key/certificate paths, host-key policy, and ProxyCommand
 are rendered into a mode-`0600` temporary OpenSSH config. The Crabbox-launched
 rsync/ssh argv contains only that config path and a fixed non-secret alias;
