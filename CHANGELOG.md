@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added mutually exclusive `runnerPhases` timing telemetry for provider acquire/borrow, connectivity and readiness, workspace seed/overlay, command, artifact collection, cleanup, delegated opaque work, and unattributed time while preserving the existing timing fields.
 - Added fixed idempotent `--lease-id` replay to the Machine0 provider, binding each caller-supplied lease identity to a durable create intent and the exact Machine0 resource ID.
 
 ### Fixed
