@@ -4,6 +4,7 @@
 
 ### Added
 
+- Added versioned `linux-minimal` and `linux-builder` readiness recipes with canonical digests, shared Go/Worker bootstrap generation, and a verified manifest fast path that avoids repeated package-manager work.
 - Added mutually exclusive `runnerPhases` timing telemetry for provider acquire/borrow, connectivity and readiness, workspace seed/overlay, command, artifact collection, cleanup, delegated opaque work, and unattributed time while preserving the existing timing fields.
 - Added fixed idempotent `--lease-id` replay to the Machine0 provider, binding each caller-supplied lease identity to a durable create intent and the exact Machine0 resource ID.
 
